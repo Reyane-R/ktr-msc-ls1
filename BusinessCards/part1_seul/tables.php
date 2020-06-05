@@ -13,8 +13,6 @@
 	if (isset($_POST['save'])) {
 		$username = $_POST['username'];
 		$company = $_POST['company'];
-		$email = $_POST['eamil'];
-		$tel = $_POST['tel'];
 
 		mysqli_query($db, "INSERT INTO info (username, company,email,tel) VALUES ('$username', '$company','$email','$tel')"); 
 		$_SESSION['message'] = "company saved"; 
